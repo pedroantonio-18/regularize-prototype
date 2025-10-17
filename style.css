@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --brand: #7ca419;
+  --text-main: #000;
+  --text-inverted: #fff;
+  --text-muted: #4d4d4d;
+  --input-color: #272727;
+  --padding-v: 12px;
+  --padding-h: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  width: 160px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content {
+  max-width: 650px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 2.75rem;
+  line-height: 1.2;
+}
+
+.hero-paragraph {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 128px;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand);
+  padding: 14px;
+  width: 102%;
+  font-size: 19px;
+  border-radius: 14px;
+  font-weight: 500;
+  color: var(--text-inverted);
+  text-decoration: none;
+}
+
+.consultant-link {
+  font-size: 14px;
+  color: var(--brand);
+}
+
+.consultant-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 0 1.5rem;
+}
+
+.consultant-login h1 {
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.consultant-login p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.input-wrap {
+  position: relative;
+  display: inline-block;
+  width: 284px;
+  margin-bottom: 14px;
+}
+
+.styled-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px var(--padding-h) var(--padding-v) var(--padding-h);
+  border: 2px solid color-mix(in srgb, var(--input-color) 40%, transparent);
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--input-color);
+  background: transparent;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.styled-input:focus {
+  border-color: var(--input-color);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand) 35%, transparent);
+}
+
+.floating-label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  transform: translateY(-50%);
+  padding: 0 6px;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--input-color) 45%, transparent);
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.styled-input:focus + .floating-label {
+  color: var(--input-color);
+}
+
+.consultant-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  width: 277px;
+}
+
+.consultant-btn-m {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  align-items: center;       /* centraliza verticalmente */
+  gap: 8px;
+  background-color: var(--brand);
+  padding: 10px 16px;
+  width: 102%;
+  font-size: 18px;
+  border-radius: 14px;
+  font-weight: 500;
+  color: var(--text-inverted);
+  text-decoration: none;
+  border: 3px solid var(--brand);
+  transition: all 0.2s ease;
+}
+
+.consultant-btn-m svg {
+  margin-top: 1px;
+  transition: transform 0.2s ease;
+}
+
+.consultant-btn-m:hover svg {
+  transform: translateX(4px);
+}
+
+.consultant-btn-s {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  width: 102%;
+  font-size: 18px;
+  border-radius: 14px;
+  font-weight: 500;
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: none;
+  border: 3px solid var(--brand);
+}
+
+.user-instructions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.25rem;
+  padding: 0 1.5rem;
+}
+
+.user-instructions h1 {
+  font-size: 16px;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.user-instructions p {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-indent: 8px;
+}
+
+.terms-checkbox {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+input[type="checkbox"] {
+  margin-right: 7px;
+  accent-color: var(--brand);
+}
+
+.terms-checkbox label {
+  font-size: 13px;
+  color: var(--brand);
+  line-height: 1.4;
+  margin-top: -2px;
+}
+
+.terms-checkbox label a {
+  color: var(--brand);
+}
+
+a {
+    margin-top: 56px;
+}
