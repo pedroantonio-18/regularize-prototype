@@ -4,10 +4,12 @@
   --brand: #7ca419;
   --text-main: #000;
   --text-inverted: #fff;
-  --text-muted: #4d4d4d;
+  --text-muted: #5d5d5d;
   --input-color: #272727;
   --padding-v: 12px;
   --padding-h: 14px;
+  --card-color: #fff;
+  --divider: #a4a4a460;
 }
 
 * {
@@ -18,7 +20,7 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #f8f8f8;
 }
 
 .hero {
@@ -284,4 +286,79 @@ input[type="checkbox"] {
   transform: translateX(-50%);
   bottom: 32px;
   width: 312px;
+}
+
+.results-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.results-page h1 {
+  font-size: 1.3rem;
+  color: var(--text-main);
+}
+
+.section {
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.section-label {
+  padding: 4px 16px;
+  border: 2px solid var(--brand);
+  border-radius: 999px;
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 11px 15px;
+  background-color: var(--card-color);
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+  border-radius: 14px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.section-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.section-card hr {
+  border: none;
+  border-radius: 999px;
+  height: 1.5px;
+  background-color: var(--divider);
+}
+
+.section-card-content p {
+  font-weight: 600;
+}
+
+.section-card-p1 {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.section-card-p2 {
+  font-size: 13px;
+  color: var(--text-main);
+  max-width: 278px;
+}
+
+.results-page .consultant-btn-m {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
 }
