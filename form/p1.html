@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../assets/imgs/logo.png" />
+    <title>Document</title>
+  </head>
+  <body class="form-page">
+    <h2>Dados pessoais</h2>
+    <div class="input-wrap" style="--input-color: #222">
+      <input type="text" id="nome-completo" class="styled-input" />
+      <label for="nome-completo" class="floating-label">Nome completo</label>
+    </div>
+    <div class="input-wrap" style="--input-color: #222">
+      <input
+        type="date"
+        id="data-nascimento"
+        class="styled-input"
+        value="none"
+      />
+      <label for="data-nascimento" class="floating-label"
+        >Data de nascimento</label
+      >
+    </div>
+    <div class="input-wrap" style="--input-color: #222">
+      <input type="text" id="cpf" class="styled-input" />
+      <label for="cpf" class="floating-label">CPF</label>
+    </div>
+    <div class="input-wrap" style="--input-color: #222">
+      <input type="email" id="email" class="styled-input" />
+      <label for="email" class="floating-label">Email</label>
+    </div>
+    <div class="input-wrap" style="--input-color: #222">
+      <input type="tel" id="telefone" class="styled-input" />
+      <label for="telefone" class="floating-label">Telefone</label>
+    </div>
+    <div class="input-wrap" style="--input-color: #222">
+      <select id="grau-escolaridade" class="styled-input">
+        <option value="" disabled selected></option>
+        <option value="fundamental-incompleto">
+          Ensino fundamental incompleto
+        </option>
+        <option value="fundamental-completo">
+          Ensino fundamental completo
+        </option>
+        <option value="medio-incompleto">Ensino médio incompleto</option>
+        <option value="medio-completo">Ensino médio completo</option>
+        <option value="superior-incompleto">Ensino superior incompleto</option>
+        <option value="superior-completo">Ensino superior completo</option>
+      </select>
+      <label for="grau-escolaridade" class="floating-label"
+        >Grau de escolaridade</label
+      >
+    </div>
+    <a href="p2.html" class="form-next-button"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-arrow-right-icon lucide-arrow-right"
+      >
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" /></svg
+    ></a>
+  </body>
+</html>

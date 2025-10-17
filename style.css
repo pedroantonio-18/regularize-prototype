@@ -120,6 +120,10 @@ body {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.input-wrap select option {
+  font-size: 12px;
+}
+
 .styled-input:focus {
   border-color: var(--input-color);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand) 35%, transparent);
@@ -152,8 +156,8 @@ body {
 
 .consultant-btn-m {
   display: flex;
-  justify-content: center;   /* centraliza horizontalmente */
-  align-items: center;       /* centraliza verticalmente */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
   gap: 8px;
   background-color: var(--brand);
   padding: 10px 16px;
@@ -231,6 +235,53 @@ input[type="checkbox"] {
   color: var(--brand);
 }
 
-a {
-    margin-top: 56px;
+.user-instructions a {
+  margin-top: 56px;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  padding: 0 1.5rem;
+}
+
+.form-page h2 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.form-page .input-wrap {
+  width: 100%;
+}
+
+.form-next-button {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  width: 52px;
+  height: 52px;
+  border: 3px solid var(--brand);
+  color: var(--brand);
+  align-self: flex-end;
+  border-radius: 14px;
+}
+
+.form-page .terms-checkbox {
+  margin-top: 6px;
+}
+
+.form-page .consultant-btn-m {
+  padding: 7px;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  width: 312px;
 }
